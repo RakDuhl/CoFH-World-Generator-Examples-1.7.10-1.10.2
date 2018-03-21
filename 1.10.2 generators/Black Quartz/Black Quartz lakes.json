@@ -1,0 +1,43 @@
+{
+	"populate": {
+		"Quartz Ponds": {
+			"retrogen": true,
+			"distribution": "surface",
+			"material": [
+				{"name": "minecraft:grass"}
+			],
+			"follow-terrain": true,
+			"generator": {
+				"type": "lake",
+				"use-material": true,
+				"outline-block": [
+					{
+						"name": "railcraft:generic",
+						"metadata": 9,
+						"weight": 50
+					},
+					{
+						"name": "actuallyadditions:blockMisc",
+						"metadata": 3,
+						"weight": 50
+					}
+				],
+				"block": [
+					{
+						"name": "thermalfoundation:fluid_petrotheum"
+					}
+				]
+			},
+			"cluster-count": 1,
+			"chunk-chance": 20,
+			"biome": "all",
+			"dimension": {
+				"restriction": "blacklist",
+				"value": [
+					-1,
+					1
+				]
+			}
+		}
+	}
+}

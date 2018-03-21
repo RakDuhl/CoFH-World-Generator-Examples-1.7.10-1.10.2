@@ -1,0 +1,38 @@
+{
+	"populate": {
+		"Infinity Block decorations": {
+			"distribution": "decoration",
+			"material": [
+				"minecraft:grass",
+				"minecraft:tallgrass",
+				"minecraft:air"
+			],
+			"generator": {
+				"type": "decoration",
+				"cluster-size": 5,
+				"block": [
+					{
+						"name": "avaritia:block_resource",
+						"metadata": 1,
+					}
+				],
+				"surface": [
+					"minecraft:grass",
+					"minecraft:sand",
+					"minecraft:stone"
+				],
+				"see-sky": false,
+				"check-stay": false,
+				"stack-height": 3,
+				"x-variance": 4,
+				"y-variance": 2,
+				"z-variance": 6
+			},
+			"cluster-count": 2,
+			"chunk-chance": 2,
+			"retrogen": true,
+			"biome": "all",
+			"dimension": "all",
+		}
+	}
+}

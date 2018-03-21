@@ -1,0 +1,47 @@
+{
+	"populate": {
+		"Slimeblobs": {
+			"distribution": "surface",
+			"material": [
+				"minecraft:grass"
+			],
+			"follow-terrain": true,
+			"generator": {
+				"type": "geode",
+				"block": [
+					{"name": "minecraft:slime", "weight": 20},
+					{"name": "tconstruct:slime", "metadata": 1, "weight": 20},
+					{"name": "tconstruct:slime", "metadata": 2, "weight": 20},
+					{"name": "tconstruct:slime", "metadata": 3, "weight": 20}
+				],
+				"crust": [
+					{"name": "minefactoryreloaded:pink_slime_block", "weight": 1},
+					{"name": "minecraft:slime", "weight": 20}
+				],
+				"hollow": true,
+				"filler": [
+					{"name": "tconstruct:purpleslime"}
+				]
+			},
+			"cluster-count": 2,
+			"chunk-chance": 10,
+			"biome": {
+				"restriction": "whitelist",
+				"value": [
+					{
+						"type": "dictionary",
+						"entry": "SWAMP"
+					}
+				]
+			},
+			"retrogen": true,
+			"dimension": {
+				"restriction": "blacklist",
+				"value": [
+					-1,
+					1
+				]
+			}
+		}
+	}
+}

@@ -1,0 +1,97 @@
+{
+	"populate": {
+		"Lush Bauxite": {
+			"retrogen": "true",
+			"distribution": "gaussian",
+			"center-height": 55,
+			"spread": 20,
+			"smoothness": 5,
+			"generator": {
+				"type": "geode",
+				"block": [
+					{
+						"name": "immersiveengineering:ore",
+						"metadata": 1,
+						"weight": 200
+					},
+					{
+						"name": "techreborn:techreborn.ore",
+						"weight": 10
+					}
+				],
+				"crust": [
+					{
+						"name": "minecraft:clay"
+					}
+				],
+				"hollow": false
+			},
+			"cluster-count": 20,
+			"chunk-chance": 20,
+			"biome": {
+				"restriction": "whitelist",
+				"value": [
+					{
+						"type": "name",
+						"entry": "Forest"
+					},
+					{
+						"type": "name",
+						"entry": "Taiga"
+					},
+					{
+						"type": "name",
+						"entry": "Forest Hills"
+					},
+					{
+						"type": "name",
+						"entry": "Taiga Hills"
+					},
+					{
+						"type": "name",
+						"entry": "Birch Forest"
+					},
+					{
+						"type": "name",
+						"entry": "Birch Forest"
+					},
+					{
+						"type": "name",
+						"entry": "Cold Taiga"
+					},
+					{
+						"type": "name",
+						"entry": "Cold Taiga"
+					},
+					{
+						"type": "name",
+						"entry": "Flower Forest"
+					},
+					{
+						"type": "name",
+						"entry": "Taiga M"
+					},
+					{
+						"type": "name",
+						"entry": "Birch Forest M"
+					},
+					{
+						"type": "name",
+						"entry": "Birch Forest Hills M"
+					},
+					{
+						"type": "name",
+						"entry": "Cold Taiga M"
+					}
+				]
+			},
+			"dimension": {
+				"restriction": "blacklist",
+				"value": [
+					-1,
+					1
+				]	
+			}
+		}
+	}
+}

@@ -1,0 +1,30 @@
+{
+	"populate": {
+		"Cave-Clusters": {
+			"enabled": false,
+			"distribution": "cave",
+			"ceiling": false,
+			"generator": {
+				"type": "cluster",
+				"block": [
+					{"name": "minecraft:coal_ore", "weight": 1000},
+					{"name": "minecraft:diamond_ore", "weight": 1}
+				],
+				"cluster-size": 20,
+			},
+			"retrogen": "true",
+			"min-height": 20,
+			"max-height": 255,
+			"cluster-count": 15,
+			"chunk-chance": 1,
+			"biome": "all",
+			"dimension": {
+				"restriction": "blacklist",
+				"value": [
+					-1,
+					1
+				]	
+			}
+		}
+	}
+}

@@ -1,0 +1,37 @@
+{
+	"populate": {
+		"Diamond Geodes": {
+			"distribution": "uniform",
+			"min-height": 1,
+			"max-height": 20,
+			"generator": {
+				"type": "geode",
+				"crust": [
+					"minecraft:coal_ore"
+				],
+				"hollow": false,
+				"block": [
+					{
+						"name": "minecraft:diamond_ore",
+						"weight": 3
+					},
+					{
+						"name": "minecraft:coal_ore",
+						"weight": 5
+					}
+				]
+			},
+			"cluster-count": 1,
+			"chunk-chance": 50,
+			"retrogen": true,
+			"biome": "all",
+			"dimension": {
+				"restriction": "blacklist",
+				"value": [
+					-1,
+					1
+				]
+			}
+		}
+	}
+}

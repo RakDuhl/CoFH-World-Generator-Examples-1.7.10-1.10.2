@@ -1,0 +1,39 @@
+{
+	"populate": {
+		"Spikes": {
+			"distribution": "surface",
+			"follow-terrain": true,
+			"generator": {
+				"type": "spike",
+				"block": [
+					{"name": "minecraft:coal_ore", "weight": 1000},
+					{"name": "minecraft:diamond_ore", "weight": 1}
+				],
+				"material": [],
+				"min-height": 3,
+				"height-variance": 10,
+				"position-variance": 8,
+				"large-spikes": false,
+			},
+			"cluster-count": 2,
+			"chunk-chance": 100,
+			"biome": {
+				"restriction": "whitelist",
+				"value": [
+					{
+						"type": "dictionary",
+						"entry": "PLAINS"
+					}
+				]
+			},
+			"retrogen": "true",
+			"dimension": {
+				"restriction": "blacklist",
+				"value": [
+					-1,
+					1
+				]
+			}
+		}
+	}
+}

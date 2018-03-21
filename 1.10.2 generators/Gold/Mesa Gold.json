@@ -1,0 +1,49 @@
+{
+	"populate": {
+		"Mesa Gold Boulders": {
+			"distribution": "gaussian",
+			"center-height": 32,
+			"spread": 30,
+			"smoothness": 30,
+			"generator": {
+				"type": "boulder",
+				"diameter": 2,
+				"size-variance": 2,
+				"count": 6,
+				"count-variance": 1,
+				"hollow": true,
+				"hollow-size": 0.1,
+				"hollow-variance": 0.2,
+				"block": [
+					"minecraft:gold_ore"
+				]
+			},
+			"retrogen": true,
+			"cluster-count": 2,
+			"chunk-chance": 20,
+			"biome": {
+				"restriction": "whitelist",
+				"value": [
+					{
+						"type": "id",
+						"entry": [
+							"mesa",
+							"mesa_rock",
+							"mesa_clear_rock",
+							"mutated_mesa",
+							"mutated_mesa_rock",
+							"mutated_mesa_clear_rock"
+						]
+					}
+				]
+			},
+			"dimension": {
+				"restriction": "blacklist",
+				"value": [
+					-1,
+					1
+				]
+			}
+		}
+	}
+}

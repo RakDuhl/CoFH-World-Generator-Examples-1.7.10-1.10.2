@@ -1,0 +1,29 @@
+{
+	"populate": {
+		"Copper-Cave-Clusters": {
+			"distribution": "cave",
+			"ceiling": false,
+			"generator": {
+				"type": "cluster",
+				"block": [
+					{"name": "thermalfoundation:ore", "weight": 100},
+					{"name": "minecraft:gold_ore", "weight": 1}
+				],
+				"cluster-size": 20,
+			},
+			"retrogen": "true",
+			"min-height": 20,
+			"max-height": 255,
+			"cluster-count": 5,
+			"chunk-chance": 2,
+			"biome": "all",
+			"dimension": {
+				"restriction": "blacklist",
+				"value": [
+					-1,
+					1
+				]	
+			}
+		}
+	}
+}

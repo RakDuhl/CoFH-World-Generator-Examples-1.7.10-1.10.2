@@ -1,0 +1,28 @@
+{
+	"populate": {
+		"Gold Boulders": {
+			"distribution": "gaussian",
+			"center-height": 32,
+			"spread": 10,
+			"smoothness": 30,
+			"generator": {
+				"type": "boulder",
+				"diameter": 3,
+				"size-variance": 3,
+				"count": 2,
+				"count-variance": 1,
+				"hollow": true,
+				"hollow-size": 0.1643,
+				"hollow-variance": 0.2,
+				"block": [
+					"minecraft:gold_ore"
+				]
+			},
+			"retrogen": true,
+			"cluster-count": 2,
+			"chunk-chance": 80,
+			"biome": "all",
+			"dimension": "all",
+		}
+	}
+}

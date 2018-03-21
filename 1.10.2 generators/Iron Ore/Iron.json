@@ -1,0 +1,40 @@
+{
+	"populate": {
+		"Iron Clusters": {
+			"distribution": "uniform",
+			"min-height": 1,
+			"max-height": 64,
+			"generator": {
+				"type": "cluster",
+				"cluster-size": 30,
+				"block": [
+					{
+						"name": "minecraft:iron_ore",
+						"weight": 40
+					},
+					{
+						"name": "magneticraft:ore_block",
+						"metadata": 3,
+						"weight": 1
+					}
+				]
+			},
+			"cluster-count": 3,
+			"chunk-chance": 10,
+			"retrogen": true,
+			"biome": {
+				"restriction": "whitelist",
+				"value": [
+					"all"
+				]
+			},
+			"dimension": {
+				"restriction": "blacklist",
+				"value": [
+					-1,
+					1
+				]
+			}
+		}
+	}
+}

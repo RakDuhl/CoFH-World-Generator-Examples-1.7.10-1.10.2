@@ -1,0 +1,42 @@
+{
+	"populate": {
+		"Water Iridium plates": {
+			"distribution": "underwater",
+			"material": [
+				"minecraft:sand",
+				"minecraft:dirt",
+				"minecraft:gravel",
+				"minecraft:stone"
+			],
+			"generator": {
+				"type": "plate",
+				"radius": 3,
+				"height": 2,
+				"slim": false,
+				"block": [
+					{
+						"name": "thermalfoundation:ore",
+						"metadata": 7,
+						"weight": 40
+					},
+					{
+						"name": "thermalfoundation:ore",
+						"metadata": 6,
+						"weight": 4
+					}
+				],
+				"material": [
+					"minecraft:sand",
+					"minecraft:dirt",
+					"minecraft:gravel",
+					"minecraft:stone"
+				]
+			},
+			"retrogen": true,
+			"cluster-count": 2,
+			"chunk-chance": 120,
+			"biome": "all",
+			"dimension": "all",
+		}
+	}
+}

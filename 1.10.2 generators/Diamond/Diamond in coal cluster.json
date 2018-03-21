@@ -1,0 +1,36 @@
+{
+	"populate": {
+		"Diamond in Coal Clusters": {
+			"distribution": "uniform",
+			"min-height": 1,
+			"max-height": 128,
+			"generator": {
+				"type": "cluster",
+				"cluster-size": 8
+				"block": [
+					"minecraft:diamond_ore"
+				],
+				"material": [
+					"minecraft:coal_ore"
+				]
+			},
+			"enabled": true,
+			"retrogen": true,
+			"chunk-chance": 1,
+			"cluster-count": 10,
+			"biome": {
+				"restriction": "whitelist",
+				"value": [
+					"all"
+				]
+			},
+			"dimension": {
+				"restriction": "blacklist",
+				"value": [
+					-1,
+					1
+				]
+			}
+		}
+	}
+}

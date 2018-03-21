@@ -1,0 +1,89 @@
+{
+	"populate": {
+		"High Lush Bauxite Extra": {
+			"retrogen": "true",
+			"distribution": "gaussian",
+			"center-height": 55,
+			"spread": 20,
+			"smoothness": 5,
+			"generator": {
+				"type": "geode",
+				"block": [
+					{
+						"name": "immersiveengineering:ore",
+						"metadata": 1,
+						"weight": 200
+					},
+					{
+						"name": "techreborn:techreborn.ore",
+						"weight": 10
+					}
+				],
+				"crust": [
+					{
+						"name": "minecraft:hardened_clay"
+					}
+				],
+				"hollow": false
+			},
+			"cluster-count": 40,
+			"chunk-chance": 10,
+			"biome": {
+				"restriction": "whitelist",
+				"value": [
+					{
+						"type": "name",
+						"entry": "Roofed Forest"
+					},
+					{
+						"type": "name",
+						"entry": "Taiga"
+					},
+					{
+						"type": "name",
+						"entry": "Mega Taiga"
+					},
+					{
+						"type": "name",
+						"entry": "Mega Taiga Hills"
+					},
+					{
+						"type": "name",
+						"entry": "Jungle"
+					},
+					{
+						"type": "name",
+						"entry": "Jungle Hills"
+					},
+					{
+						"type": "name",
+						"entry": "Jungle M"
+					},
+					{
+						"type": "name",
+						"entry": "Jungle Edge M"
+					},
+					{
+						"type": "name",
+						"entry": "Roofed Forest M"
+					},
+					{
+						"type": "name",
+						"entry": "Mega Spruce Taiga"
+					},
+					{
+						"type": "name",
+						"entry": "Redwood Taiga Hills M"
+					}
+				]
+			},
+			"dimension": {
+				"restriction": "blacklist",
+				"value": [
+					-1,
+					1
+				]	
+			}
+		},
+	}
+}

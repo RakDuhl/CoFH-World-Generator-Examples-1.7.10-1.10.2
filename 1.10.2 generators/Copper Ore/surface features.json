@@ -1,0 +1,57 @@
+{
+	"populate": {
+		"Surface-Copper": {
+			"distribution": "surface",
+			"follow-terrain": true,
+			"material": [
+				"minecraft:grass",
+				"minecraft:stone",
+				"minecraft:sand",
+				"minecraft:sandstone"
+			],
+			"generator": {
+				"type": "cluster",
+				"cluster-size": 10,
+				"block": [
+					{"name": "thermalfoundation:ore", "weight": 100},
+					{"name": "minecraft:gold_ore", "weight": 1}
+				]
+			},
+			"retrogen": true,
+			"cluster-count": 4,
+			"chunk-chance": 7,
+			"biome": {
+				"restriction": "whitelist",
+				"value": [
+					{
+						"type": "temperature",
+						"entry": "WARM"
+					},
+					{
+						"type": "name"
+						"entry": "Savanna",
+					},
+					{
+						"type": "name"
+						"entry": "Savanna Plateau M",
+					},
+					{
+						"type": "name"
+						"entry": "Savanna Plateau",
+					},
+					{
+						"type": "name"
+						"entry": "Savanna M",
+					}
+				]
+			},
+			"dimension": {
+				"restriction": "blacklist",
+				"value": [
+					-1,
+					1
+				]
+			}
+		}
+	}
+}
